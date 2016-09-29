@@ -1,0 +1,346 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-okaidia.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+// Bespoke
+.bespoke-progress-bar
+  background: #dd3a0a
+
+// Footer
+footer
+  position: absolute
+  z-index: 1
+  bottom: 1vh
+  left: 1vw
+  right: 1vw
+  transition: opacity .5s ease
+
+  &.hide
+    opacity: 0
+
+  &.show
+    opacity: 1
+    transition-delay: .5s
+
+  .footer-container
+    position: relative
+
+.js-logo--footer
+  width: 5vw
+  &.hide
+    display: none
+  &.show
+    display: block
+
+.twitter-handle
+  display: inline-block
+  position: absolute
+  right: 0
+  bottom: 0
+
+  .twitter-logo
+    vertical-align: middle
+    width: 5vh
+
+  .twitter-pseudos
+    display: inline-block
+    vertical-align: middle
+    padding-right: .5vw
+
+    h3
+      padding: 0
+      margin: 0
+      font-size: 1.75vh
+      color: #1DA1F3
+
+// Sections
+article.black
+  color: white
+  background: #111
+article.white
+  color: #111
+  background: white
+
+// Slides
+.github-slide
+  padding-top: 1.25em
+
+.what-is
+  h2
+    &:not(:last-child)
+      padding-bottom: 1em
+    &:first-child
+      padding-top: 1em
+      border-top: 1px solid white
+    &:last-child
+      padding-bottom: 1em
+      border-bottom: 1px solid white
+
+// Backdrops
+  .postcss
+    background-image: url('../images/logo/postcss.png')
+    background-size: contain
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .plugins
+    background-image: url('../images/background/plugins.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: #F7F5EF
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .saint-petersbourg
+    background-image: url('../images/background/saint-petersbourg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .silicon-valley
+    background-image: url('../images/background/silicon-valley.png')
+    background-size: cover
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .depuis
+    background-image: url('../images/background/depuis.png')
+    background-size: cover
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .south-park
+    background-image: url('../images/background/south-park.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .versus
+    background-image: url('../images/background/versus.gif')
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: #3E505E
+    &.bespoke-backdrop-active
+      opacity: .2
+
+  .postcss-parts
+    background-image: url('../images/background/postcss-parts.png')
+    background-size: 160px 160px
+    &.bespoke-backdrop-active
+      opacity: 1
+
+  .autoprefixer
+    background-image: url('../images/background/autoprefixer.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: #DD3735
+    &.bespoke-backdrop-active
+      opacity: .25
+
+  .sass
+    background-image: url('../images/logo/sass.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    background-size: 50vw
+    background-color: #CD6799
+    &.bespoke-backdrop-active
+      opacity: .25
+
+  .precss
+    background-color: #D06A99
+    &.bespoke-backdrop-active
+      opacity: 1
+
+  .util
+    background-color: #5D4157
+    &.bespoke-backdrop-active
+      opacity: 1
+
+  .rucksack
+    background-color: #F2672E
+    &.bespoke-backdrop-active
+      opacity: 1
+
+  .cssnext
+    background: linear-gradient(160deg, rgba(115,64,196,.9), rgba(49,142,223,.9)), url('../images/background/cssnext.jpg') 50% 50%/cover no-repeat
+    &.bespoke-backdrop-active
+      opacity: 1
+
+  .cssnext-code
+    background: linear-gradient(160deg, rgba(115,64,196,.9), rgba(49,142,223,.9)), url('../images/background/cssnext.jpg') 50% 50%/cover no-repeat
+    &.bespoke-backdrop-active
+      opacity: .5
+
+  .netflix-bg
+    background-image: url('../images/background/netflix.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    &.bespoke-backdrop-active
+      opacity: .25
+
+  .pcgb
+    background-image: url('../images/background/pcgb.gif')
+    background-size: 800px 600px
+    background-repeat: no-repeat
+    background-position: center center
+    background-color: #17B66D
+    &.bespoke-backdrop-active
+      opacity: .5
+
+  .conclusion
+    background-image: url('../images/background/conclusion.gif')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    &.bespoke-backdrop-active
+      opacity: .5
+
+  .merci
+    background-image: url('../images/background/thx.gif')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    &.bespoke-backdrop-active
+      opacity: .5
+
+// Titles
+.title-top
+  position: absolute
+  top: 0
+
+section.black
+  h1
+    border: 1px solid white
+    border-left-width: 0
+    border-right-width: 0
+
+section.white
+  h1
+    border: 1px solid #111
+    border-left-width: 0
+    border-right-width: 0
+
+// Text
+.center
+  text-align: center
+
+// Emoji
+.emoji
+  font-size: 80px
+
+// Lists
+ul.minimal li:before
+  display: none
+
+// Avatars
+.avatar
+  width: 100px
+  border-radius: @width
+  .avatars &
+    width: 80px
+    display: inline-block
+    margin: 10px 10px 0
+  .big-avatars &
+    width: 120px
+    margin: 16px 16px 0
+
+.avatars
+  h3
+    margin: 0
+  &.avatars-bottom
+    position: absolute
+    bottom: 0
+
+.link-bottom
+  position: absolute
+  bottom: 0
+
+// Logos
+.js-logo
+  width: 80px
+
+.logo
+  padding: 20px 0
+
+.autoprefixer-logo
+  height: 50%
+  padding: 20px 0
+
+.precss-logo
+  height: 10vh
+  position: absolute
+  top: calc(50% - 8vh)
+
+// Lists
+.no-bullets
+  li
+    &:before
+      display: none
+.companies
+  &:nth-child(2)
+    padding-bottom: 50px
+  li
+    display: inline-block
+    vertical-align: middle
+    &:before
+      display: none
+    img
+      width: 100px
+
+// Tweets
+.twitter-resize
+  .twitter-tweet
+    zoom: .55
+
+// Charts
+figure#months, figure#weeks, figure#years
+  zoom: .85
+
+// iFrame
+iframe.iframe
+  border-radius: 5px
+  margin-top: 1vh
+
+iframe.iframe-absolute
+  border-radius: 5px
+  position: absolute
+  top: 5.5vh
+
+// Github Statistics
+.github
+  height: 85%
+  border-radius: 5px
+
+.schema
+  height: 80%
+  border-radius: 5px
+
+.screenshots
+  height: 100%
+  border-radius: 5px
+
+// Issue
+.precss-issue
+  height: 75%
+  border-radius: 5px
+
+// Code
+.netflix
+  position: absolute
+  top: 5.5vh
+  height: 60%
+  border-radius: 5px
+
+.pcgb-logo
+  width: 50%
