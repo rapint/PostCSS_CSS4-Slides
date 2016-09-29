@@ -2,6 +2,7 @@
   "name": "presentation-postcss",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "gulp deploy",
     "serve": "gulp serve",
     "bower": "bower install"
   },
